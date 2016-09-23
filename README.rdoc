@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+here very simple api for making users in postgresql db
+POST /db/create will create user
+params are _user_ and _password_
+as result you can have 2 variants:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* {status: 'ok'}
+* {status: 'failed', message: 'user already present'}
